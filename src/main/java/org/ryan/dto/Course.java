@@ -8,4 +8,12 @@ public class Course {
     private int studentNum;
     private Teacher teacher;
     private String courseName;
+
+    public Course() {
+
+    }
+
+    public String toString() {
+
+    }
 }

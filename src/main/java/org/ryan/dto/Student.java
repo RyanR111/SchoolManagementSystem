@@ -8,4 +8,12 @@ public class Student {
     private int courseNum;
     private int nextId;
     private Department department;
+
+    public Student() {
+
+    }
+
+    public String toString() {
+
+    }
 }
