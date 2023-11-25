@@ -5,8 +5,13 @@ public class Teacher {
     private String lName;
     private Department department;
     private String id;
+    private String nextId;
 
     public Teacher() {
+
+    }
+
+    public void displayTeacher() {
 
     }
 

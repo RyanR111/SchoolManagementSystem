@@ -3,6 +3,7 @@ package org.ryan.dto;
 public class Course {
     private double credit;
     private String id;
+    private int nextId;
     private Student[] students;
     private Department department;
     private int studentNum;
@@ -10,6 +11,10 @@ public class Course {
     private String courseName;
 
     public Course() {
+
+    }
+
+    public void displayCourses() {
 
     }
 

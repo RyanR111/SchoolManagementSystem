@@ -9,6 +9,10 @@ public class Department {
 
     }
 
+    public void displayDepartments() {
+
+    }
+
     public String toString() {
 
     }

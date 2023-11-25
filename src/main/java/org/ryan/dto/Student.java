@@ -13,6 +13,9 @@ public class Student {
 
     }
 
+    public void displayStudent() {
+
+    }
     public String toString() {
 
     }
