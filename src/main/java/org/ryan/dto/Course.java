@@ -1,5 +1,9 @@
 package org.ryan.dto;
 
+/**
+ * holds the course information in the schoolManagementSystem
+ * @author Ryan Roberge
+ */
 public class Course {
     private double credit;
     private String id;
@@ -10,14 +14,24 @@ public class Course {
     private Teacher teacher;
     private String courseName;
 
+    /**
+     * method course
+     */
     public Course() {
 
     }
 
+    /**
+     * method to display the courses
+     */
     public void displayCourses() {
 
     }
 
+    /**
+     * method to make the courses into a string
+     * @return returns the string
+     */
     public String toString() {
 
     }

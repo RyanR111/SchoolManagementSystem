@@ -1,5 +1,9 @@
 package org.ryan.dto;
 
+/**
+ * holds the teacher information in the schoolManagementSystem
+ * @author Ryan Roberge
+ */
 public class Teacher {
     private String fName;
     private String lName;
@@ -7,14 +11,24 @@ public class Teacher {
     private String id;
     private String nextId;
 
+    /**
+     * method Teacher
+     */
     public Teacher() {
 
     }
 
+    /**
+     * method to display the teacher
+     */
     public void displayTeacher() {
 
     }
 
+    /**
+     * method to turn teachers to string
+     * @return returns the string
+     */
     public String toString() {
 
     }
