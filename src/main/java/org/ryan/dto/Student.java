@@ -29,7 +29,7 @@ public class Student {
 
     /**
      * method to turn the students to a string
-     * @return
+     * @return returns the string
      */
     public String toString() {
 
