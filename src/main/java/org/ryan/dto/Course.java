@@ -17,8 +17,11 @@ public class Course {
     /**
      * method course
      */
-    public Course() {
-
+    public Course(String courseName, double credit, Department department) {
+        this.courseName = courseName;
+        this.credit = credit;
+        this.department = department;
+        this.id = String.format("C%03d", nextId++);
     }
 
     /**

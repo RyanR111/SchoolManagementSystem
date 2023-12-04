@@ -16,8 +16,11 @@ public class Student {
     /**
      * method Student
      */
-    public Student() {
-
+    public Student(String fName, String lName, Department department) {
+        this.fName = fName;
+        this.lName = lName;
+        this.department = department;
+        this.id = String.format("S%03d", nextId++);
     }
 
     /**
@@ -25,6 +28,6 @@ public class Student {
      * @return returns the string
      */
     public String toString() {
-
+        return String.format("%s S%03d %s"
     }
 }
