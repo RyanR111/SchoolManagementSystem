@@ -19,13 +19,6 @@ public class Teacher {
     }
 
     /**
-     * method to display the teacher
-     */
-    public void displayTeacher() {
-
-    }
-
-    /**
      * method to turn teachers to string
      * @return returns the string
      */

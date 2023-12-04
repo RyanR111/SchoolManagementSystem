@@ -42,6 +42,13 @@ public class SchoolManagementSystem {
     }
 
     /**
+     * method to display the departments
+     */
+    public void displayDepartments() {
+
+    }
+
+    /**
      * method that prints students
      */
     public void printStudents() {
@@ -64,6 +71,13 @@ public class SchoolManagementSystem {
     }
 
     /**
+     * method to display the courses
+     */
+    public void displayCourses() {
+
+    }
+
+    /**
      * method to register the course
      */
     public void registerCourse() {
@@ -74,6 +88,13 @@ public class SchoolManagementSystem {
      * method to add a teacher
      */
     public void addTeacher() {
+
+    }
+
+    /**
+     * method to display the teacher
+     */
+    public void displayTeacher() {
 
     }
 
@@ -96,6 +117,13 @@ public class SchoolManagementSystem {
      * method to add a student
      */
     public void addStudent() {
+
+    }
+
+    /**
+     * method to display the students
+     */
+    public void displayStudent() {
 
     }
 

@@ -12,15 +12,9 @@ public class Department {
     /**
      * method Department
      */
-    public Department() {
-
-    }
-
-    /**
-     * method to display the departments
-     */
-    public void displayDepartments() {
-
+    public Department(String departmentName) {
+        this.departmentName = departmentName;
+        this.id = String.format("D%03d", nextId++);
     }
 
     /**

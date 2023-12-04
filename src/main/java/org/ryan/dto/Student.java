@@ -21,13 +21,6 @@ public class Student {
     }
 
     /**
-     * method to display the students
-     */
-    public void displayStudent() {
-
-    }
-
-    /**
      * method to turn the students to a string
      * @return returns the string
      */

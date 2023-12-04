@@ -22,13 +22,6 @@ public class Course {
     }
 
     /**
-     * method to display the courses
-     */
-    public void displayCourses() {
-
-    }
-
-    /**
      * method to make the courses into a string
      * @return returns the string
      */
