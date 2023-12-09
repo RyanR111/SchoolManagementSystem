@@ -1,22 +1,39 @@
 package org.ryan.dto;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  * methods that manages the entire school system
  * @author Ryan Roberge
  */
 public class SchoolManagementSystem {
+    private static final int MAX_DEPARTMENT_NUM = 5;
+    private static final int MAX_STUDENT_NUM = 200;
+    private static final int MAX_TEACHER_NUM = 20;
+    private static final int MAX_COURSE_NUM = 30;
+    private Department[] departments;
+    private Course[] courses;
+    private Student[] students;
+    private Teacher[] teachers;
+
     /**
      * method schoolManagementSystem
      */
-    public SchoolManagementSystem() {
-
+    public SchoolManagementSystem(String schoolSystem) {
+        this.departments = new Department[MAX_DEPARTMENT_NUM];
+        this.courses = new Course[MAX_COURSE_NUM];
+        this.teachers = new Teacher[MAX_TEACHER_NUM];
+        this.students = new Student[MAX_STUDENT_NUM];
     }
 
     /**
      * method to find the department
      * @return returns department
      */
-    public Department findDepartment() {
+    public Department findDepartment(String department) {
 
     }
 

@@ -1,12 +1,12 @@
 package org.ryan.dto;
 
 /**
- * holds the departments of the schoolManagementSystem
+ * holds the departments of the SchoolManagementSystem
  * @author Ryan Roberge
  */
 public class Department {
     private String id;
-    private int nextId;
+    private int nextId = 1;
     private String departmentName;
 
     /**

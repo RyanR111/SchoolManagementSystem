@@ -28,6 +28,6 @@ public class Student {
      * @return returns the string
      */
     public String toString() {
-        return String.format("%s S%03d %s"
+        return String.format("%s S%03d %s");
     }
 }
