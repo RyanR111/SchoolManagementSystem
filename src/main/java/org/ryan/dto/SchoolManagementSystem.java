@@ -13,6 +13,10 @@ public class SchoolManagementSystem {
     private Course[] courses;
     private Student[] students;
     private Teacher[] teachers;
+    int numOfDepts = 0;
+    int numOfCourses = 0;
+    int numOfTeachers = 0;
+    int numOfStudents = 0;
 
     /**
      * method schoolManagementSystem
@@ -49,11 +53,10 @@ public class SchoolManagementSystem {
     /**
      * method that adds a department
      */
-    int i = 0;
     public void addDepartment(Department department) {
-        if (i < MAX_DEPARTMENT_NUM) {
-            departments[i] = department;
-            i++;
+        if (numOfDepts < MAX_DEPARTMENT_NUM) {
+            departments[numOfDepts] = department;
+            numOfDepts++;
         } else System.out.println("Cannot add new department, max departments reached.");
     }
 
@@ -82,8 +85,11 @@ public class SchoolManagementSystem {
     /**
      * method to add a course
      */
-    public void addCourse() {
-
+    public void addCourse(Course course) {
+        if (numOfCourses < MAX_COURSE_NUM) {
+            courses[numOfCourses] = course;
+            numOfCourses++;
+        } else System.out.println("Cannot add new course, max courses reached.");
     }
 
     /**
