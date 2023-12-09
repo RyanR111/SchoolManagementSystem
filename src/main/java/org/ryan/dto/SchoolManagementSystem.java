@@ -141,8 +141,11 @@ public class SchoolManagementSystem {
     /**
      * method to add a student
      */
-    public void addStudent() {
-
+    public void addStudent(Student student) {
+        if (numOfStudents < MAX_STUDENT_NUM) {
+            students[numOfStudents] = student;
+            numOfStudents++;
+        } else System.out.println("Cannot add new student, max students reached.");
     }
 
     /**
