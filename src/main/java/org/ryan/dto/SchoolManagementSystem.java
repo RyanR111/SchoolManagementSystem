@@ -1,10 +1,5 @@
 package org.ryan.dto;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
 /**
  * methods that manages the entire school system
  * @author Ryan Roberge
@@ -54,8 +49,12 @@ public class SchoolManagementSystem {
     /**
      * method that adds a department
      */
-    public void addDepartment() {
-
+    int i = 0;
+    public void addDepartment(Department department) {
+        if (i < MAX_DEPARTMENT_NUM) {
+            departments[i] = department;
+            i++;
+        } else System.out.println("Cannot add new department, max departments reached.");
     }
 
     /**
