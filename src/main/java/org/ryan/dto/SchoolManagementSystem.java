@@ -109,8 +109,11 @@ public class SchoolManagementSystem {
     /**
      * method to add a teacher
      */
-    public void addTeacher() {
-
+    public void addTeacher(Teacher teacher) {
+        if (numOfTeachers < MAX_TEACHER_NUM) {
+            teachers[numOfTeachers] = teacher;
+            numOfTeachers++;
+        } else System.out.println("Cannot add new teacher, max teachers reached.");
     }
 
     /**
