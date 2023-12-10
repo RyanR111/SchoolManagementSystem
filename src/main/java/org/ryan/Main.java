@@ -18,7 +18,7 @@ public class Main {
         vanier.displayTeachers();
         Course course1 = new Course("Biology", 2, science);
         vanier.addCourse(course1);
-        course1.modifyCourseTeacher(teacher1);
+        vanier.modifyCourseTeacher("C001", "T001");
         vanier.displayCourses();
         System.out.println(vanier.findCourse("C002"));
         System.out.println(vanier.findStudent("S001"));

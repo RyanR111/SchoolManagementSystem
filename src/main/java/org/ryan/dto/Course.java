@@ -31,10 +31,6 @@ public class Course {
         this.id = String.format("C%03d", nextId++);
     }
 
-    public void modifyCourseTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
     /**
      * method to make the courses into a string
      * @return returns the string

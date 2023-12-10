@@ -3,8 +3,6 @@ package org.ryan.dto;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Objects;
-
 /**
  * methods that manage the entire school system
  * @author Ryan Roberge
@@ -24,6 +22,7 @@ public class SchoolManagementSystem {
     int numOfCourses = 0;
     int numOfTeachers = 0;
     int numOfStudents = 0;
+    int s = 0;
 
     /**
      * method schoolManagementSystem
@@ -55,7 +54,16 @@ public class SchoolManagementSystem {
     /**
      * method that modifies the course assigned to a teacher
      */
-
+    public void modifyCourseTeacher(String courseId, String teacherId) {
+        int teacherCounter = numOfTeachers - 1;
+        while (teacherCounter >= 0) {
+            if (teachers[teacherCounter].getId().equals(teacherId)) {
+                break;
+            } else if (teacherCounter == 0) {
+                System.out.println("Teacher not found!");
+            } teacherCounter--;
+        } findCourse(courseId).setTeacher(teachers[teacherCounter]);
+    }
 
     /**
      * method that adds a department
@@ -119,7 +127,7 @@ public class SchoolManagementSystem {
     /**
      * method to register the course
      */
-    public void registerCourse(Student student, Course course) {
+    public void registerCourse(Course course, Student student) {
 
     }
 
