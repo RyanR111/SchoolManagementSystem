@@ -33,7 +33,7 @@ public class SchoolManagementSystem {
      * @return returns department
      */
     public Department findDepartment(String department) {
-
+        return findDepartment("hi");
     }
 
     /**
@@ -64,7 +64,11 @@ public class SchoolManagementSystem {
      * method to display the departments
      */
     public void displayDepartments() {
-
+        int d = numOfDepts - 1;
+        while (d >= 0) {
+            System.out.print(departments[d]);
+            d--;
+        }
     }
 
     /**
@@ -79,7 +83,7 @@ public class SchoolManagementSystem {
      * @return returns student
      */
     public Student findStudent() {
-
+        return findStudent();
     }
 
     /**

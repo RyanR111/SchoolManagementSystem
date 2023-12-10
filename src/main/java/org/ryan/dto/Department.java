@@ -6,7 +6,7 @@ package org.ryan.dto;
  */
 public class Department {
     private String id;
-    private int nextId = 1;
+    private static int nextId = 1;
     private String departmentName;
 
     /**
@@ -22,6 +22,6 @@ public class Department {
      * @return returns a string
      */
     public String toString() {
-
+        return String.format("Department(id=%s,deptName='%s')\n", id, departmentName);
     }
 }

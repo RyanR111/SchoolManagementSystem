@@ -10,7 +10,7 @@ public class Student {
     private Course[] courses;
     private String id;
     private int courseNum;
-    private int nextId;
+    private int nextId = 0;
     private Department department;
 
     /**
@@ -28,6 +28,6 @@ public class Student {
      * @return returns the string
      */
     public String toString() {
-        return String.format("%s S%03d %s");
+
     }
 }
