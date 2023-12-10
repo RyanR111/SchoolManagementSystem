@@ -33,7 +33,7 @@ public class SchoolManagementSystem {
      * @return returns department
      */
     public Department findDepartment(String department) {
-        return findDepartment("hi");
+
     }
 
     /**
@@ -126,13 +126,6 @@ public class SchoolManagementSystem {
      * @return returns the course
      */
     public Course findCourse() {
-
-    }
-
-    /**
-     * method to print the departments
-     */
-    public void printDepartments() {
 
     }
 
