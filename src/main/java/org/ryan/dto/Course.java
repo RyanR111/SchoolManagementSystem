@@ -1,5 +1,7 @@
 package org.ryan.dto;
 
+import java.util.Arrays;
+
 /**
  * holds the course information in the schoolManagementSystem
  * @author Ryan Roberge
@@ -7,7 +9,7 @@ package org.ryan.dto;
 public class Course {
     private double credits;
     private String id;
-    private int nextId;
+    private int nextId = 1;
     private Student[] students;
     private Department department;
     private int studentNum;
@@ -29,6 +31,7 @@ public class Course {
      * @return returns the string
      */
     public String toString() {
-        return String.format("Course{id=%s,courseName='%s',dept='%s', credits='}\n", id, courseName, department, credits);
+        return String.format("Course{id=%s,courseName='%s',dept=%s, credits=%.1f, teacher=%s,students=%s}\n", id,
+                courseName, department, credits, teacher, Arrays.toString(students));
     }
 }

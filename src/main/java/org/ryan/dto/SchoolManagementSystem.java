@@ -37,13 +37,6 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method that prints teachers
-     */
-    public void printTeachers() {
-
-    }
-
-    /**
      * method that modifies the course assigned to a teacher
      */
     public void modifyCourseTeacher() {
@@ -83,7 +76,7 @@ public class SchoolManagementSystem {
      * @return returns student
      */
     public Student findStudent() {
-        return findStudent();
+
     }
 
     /**
@@ -100,7 +93,11 @@ public class SchoolManagementSystem {
      * method to display the courses
      */
     public void displayCourses() {
-
+        int c = numOfCourses - 1;
+        while (c >= 0) {
+            System.out.print(courses[c]);
+            c--;
+        }
     }
 
     /**
