@@ -1,9 +1,14 @@
 package org.ryan.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * holds the departments of the SchoolManagementSystem
  * @author Ryan Roberge
  */
+@Getter
+@Setter
 public class Department {
     private String id;
     private static int nextId = 1;

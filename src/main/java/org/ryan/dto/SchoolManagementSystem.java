@@ -39,8 +39,17 @@ public class SchoolManagementSystem {
      * method to find the department
      * @return returns department
      */
-    public Department findDepartment(String department) {
-
+    public Department findDepartment(String deptId) {
+        int deptCounter = numOfDepts - 1;
+        while (deptCounter >= 0) {
+            if (departments[deptCounter].getId().equals(deptId)) {
+                return departments[deptCounter];
+            } else if (deptCounter == 0) {
+                return null;
+            }
+            deptCounter--;
+        }
+        return null;
     }
 
     /**
