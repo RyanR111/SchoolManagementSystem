@@ -74,7 +74,16 @@ public class SchoolManagementSystem {
      * @return returns student
      */
     public Student findStudent(String studentId) {
-        return findStudent("urmom");
+        int studentCounter = numOfStudents - 1;
+        while (studentCounter >= 0) {
+            if (students[studentCounter].getId().equals(studentId)) {
+                return students[studentCounter];
+            } else if (studentCounter == 0) {
+                return null;
+            }
+            studentCounter--;
+        }
+        return null;
     }
 
     /**
@@ -130,11 +139,11 @@ public class SchoolManagementSystem {
      * method to find a course
      * @return returns the course
      */
-    public Course findCourse(String id) {
+    public Course findCourse(String courseId) {
         int courseCounter = numOfCourses - 1;
         while (courseCounter >= 0) {
-            if (courses[courseCounter].getId().equals(id)) {
-                return courses[0];
+            if (courses[courseCounter].getId().equals(courseId)) {
+                return courses[courseCounter];
             } else if (courseCounter == 0) {
                 return null;
             }

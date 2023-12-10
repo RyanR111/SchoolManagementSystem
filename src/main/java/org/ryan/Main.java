@@ -21,5 +21,6 @@ public class Main {
         course1.modifyCourseTeacher(teacher1);
         vanier.displayCourses();
         System.out.println(vanier.findCourse("C002"));
+        System.out.println(vanier.findStudent("S001"));
     }
 }
