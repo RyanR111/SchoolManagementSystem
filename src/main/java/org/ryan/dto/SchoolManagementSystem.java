@@ -177,7 +177,16 @@ public class SchoolManagementSystem {
      * method to find a teacher
      * @return returns the found teacher
      */
-    public Teacher findTeacher() {
-
+    public Teacher findTeacher(String teacherId) {
+        int teacherCounter = numOfTeachers - 1;
+        while (teacherCounter >= 0) {
+            if (teachers[teacherCounter].getId().equals(teacherId)) {
+                return teachers[teacherCounter];
+            } else if (teacherCounter == 0) {
+                return null;
+            }
+            teacherCounter--;
+        }
+        return null;
     }
 }

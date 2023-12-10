@@ -22,5 +22,6 @@ public class Main {
         vanier.displayCourses();
         System.out.println(vanier.findCourse("C002"));
         System.out.println(vanier.findStudent("S001"));
+        System.out.println(vanier.findTeacher("T001"));
     }
 }

@@ -1,9 +1,14 @@
 package org.ryan.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * holds the teacher information in the schoolManagementSystem
  * @author Ryan Roberge
  */
+@Getter
+@Setter
 public class Teacher {
     private String fname;
     private String lname;
