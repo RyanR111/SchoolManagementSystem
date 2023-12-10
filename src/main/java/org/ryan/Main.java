@@ -10,7 +10,9 @@ public class Main {
         vanier.addDepartment(animals);
         vanier.addDepartment(science);
         vanier.displayDepartments();
-        Student student = new Student("Ryan", "Roberge", science);
+        Student student1 = new Student("Ryan", "Roberge", science);
+        vanier.addStudent(student1);
+        vanier.displayStudent();
         Teacher teacher1 = new Teacher("Hello", "World", science);
         vanier.addTeacher(teacher1);
         vanier.displayTeachers();

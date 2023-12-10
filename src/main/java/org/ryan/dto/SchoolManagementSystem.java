@@ -160,7 +160,11 @@ public class SchoolManagementSystem {
      * method to display the students
      */
     public void displayStudent() {
-
+        int s = numOfStudents - 1;
+        while (s >= 0) {
+            System.out.print(students[s]);
+            s--;
+        }
     }
 
     /**

@@ -5,7 +5,7 @@ package org.ryan.dto;
  * @author Ryan Roberge
  */
 public class Course {
-    private double credit;
+    private double credits;
     private String id;
     private int nextId;
     private Student[] students;
@@ -17,9 +17,9 @@ public class Course {
     /**
      * method course
      */
-    public Course(String courseName, double credit, Department department) {
+    public Course(String courseName, double credits, Department department) {
         this.courseName = courseName;
-        this.credit = credit;
+        this.credits = credits;
         this.department = department;
         this.id = String.format("C%03d", nextId++);
     }
@@ -29,6 +29,6 @@ public class Course {
      * @return returns the string
      */
     public String toString() {
-
+        return String.format("Course{id=%s,courseName='%s',dept='%s', credits='}\n", id, courseName, department, credits);
     }
 }

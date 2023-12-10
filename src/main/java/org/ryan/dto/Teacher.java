@@ -9,7 +9,7 @@ public class Teacher {
     private String lname;
     private Department department;
     private String id;
-    private int nextId;
+    private int nextId = 1;
 
     /**
      * method Teacher
@@ -26,6 +26,6 @@ public class Teacher {
      * @return returns the string
      */
     public String toString() {
-        return String.format("Teacher{id=%s,fname='%s',lname='%s',dept='%s'}\n", id, fname, lname, department);
+        return String.format("{Teacher{id=%s,fname='%s',lname='%s',dept='%s'}\n", id, fname, lname, department);
     }
 }
