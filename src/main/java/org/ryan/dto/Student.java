@@ -1,11 +1,16 @@
 package org.ryan.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Arrays;
 
 /**
  * holds the students of the schoolManagementSystem
  * @author Ryan Roberge
  */
+@Getter
+@Setter
 public class Student {
     private String fname;
     private String lname;

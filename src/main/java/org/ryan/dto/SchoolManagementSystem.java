@@ -1,9 +1,16 @@
 package org.ryan.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.Objects;
+
 /**
- * methods that manages the entire school system
+ * methods that manage the entire school system
  * @author Ryan Roberge
  */
+@Getter
+@Setter
 public class SchoolManagementSystem {
     private static final int MAX_DEPARTMENT_NUM = 5;
     private static final int MAX_STUDENT_NUM = 200;
@@ -39,9 +46,7 @@ public class SchoolManagementSystem {
     /**
      * method that modifies the course assigned to a teacher
      */
-    public void modifyCourseTeacher() {
 
-    }
 
     /**
      * method that adds a department
@@ -68,8 +73,8 @@ public class SchoolManagementSystem {
      * method that finds a student
      * @return returns student
      */
-    public Student findStudent() {
-
+    public Student findStudent(String studentId) {
+        return findStudent("urmom");
     }
 
     /**
@@ -96,7 +101,7 @@ public class SchoolManagementSystem {
     /**
      * method to register the course
      */
-    public void registerCourse() {
+    public void registerCourse(Student student, Course course) {
 
     }
 
@@ -125,8 +130,17 @@ public class SchoolManagementSystem {
      * method to find a course
      * @return returns the course
      */
-    public Course findCourse() {
-
+    public Course findCourse(String id) {
+        int courseCounter = numOfCourses - 1;
+        while (courseCounter >= 0) {
+            if (courses[courseCounter].getId().equals(id)) {
+                return courses[0];
+            } else if (courseCounter == 0) {
+                return null;
+            }
+            courseCounter--;
+        }
+        return null;
     }
 
     /**
