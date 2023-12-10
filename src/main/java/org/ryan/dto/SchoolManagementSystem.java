@@ -65,13 +65,6 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method that prints students
-     */
-    public void printStudents() {
-
-    }
-
-    /**
      * method that finds a student
      * @return returns student
      */
