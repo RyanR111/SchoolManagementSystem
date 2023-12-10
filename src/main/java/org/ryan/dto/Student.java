@@ -5,8 +5,8 @@ package org.ryan.dto;
  * @author Ryan Roberge
  */
 public class Student {
-    private String fName;
-    private String lName;
+    private String fname;
+    private String lname;
     private Course[] courses;
     private String id;
     private int courseNum;
@@ -16,9 +16,9 @@ public class Student {
     /**
      * method Student
      */
-    public Student(String fName, String lName, Department department) {
-        this.fName = fName;
-        this.lName = lName;
+    public Student(String fname, String lname, Department department) {
+        this.fname = fname;
+        this.lname = lname;
         this.department = department;
         this.id = String.format("S%03d", nextId++);
     }

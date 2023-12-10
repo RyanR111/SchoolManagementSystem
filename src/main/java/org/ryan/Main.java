@@ -11,7 +11,9 @@ public class Main {
         vanier.addDepartment(science);
         vanier.displayDepartments();
         Student student = new Student("Ryan", "Roberge", science);
-        Teacher teacher = new Teacher("Hello", "World", science);
+        Teacher teacher1 = new Teacher("Hello", "World", science);
+        vanier.addTeacher(teacher1);
+        vanier.displayTeachers();
         Course course = new Course("Biology", 2, science);
     }
 }

@@ -123,8 +123,12 @@ public class SchoolManagementSystem {
     /**
      * method to display the teacher
      */
-    public void displayTeacher() {
-
+    public void displayTeachers() {
+        int t = numOfTeachers - 1;
+        while (t >= 0) {
+            System.out.print(teachers[t]);
+            t--;
+        }
     }
 
     /**
