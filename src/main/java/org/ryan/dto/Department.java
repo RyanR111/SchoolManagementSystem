@@ -15,7 +15,8 @@ public class Department {
     private String departmentName;
 
     /**
-     * method Department
+     * department object
+     * @param departmentName the name of the department
      */
     public Department(String departmentName) {
         this.departmentName = departmentName;

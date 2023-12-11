@@ -17,7 +17,10 @@ public class Teacher {
     private int nextId = 1;
 
     /**
-     * method Teacher
+     * teacher object
+     * @param fname first name of the teacher
+     * @param lname last name of the teacher
+     * @param department the teacher's department
      */
     public Teacher(String fname, String lname, Department department) {
         this.fname = fname;
@@ -27,7 +30,7 @@ public class Teacher {
     }
 
     /**
-     * method to turn teachers to string
+     * method to turn teachers to a string
      * @return returns the string
      */
     public String toString() {

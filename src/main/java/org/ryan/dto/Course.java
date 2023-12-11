@@ -22,7 +22,10 @@ public class Course {
     private String courseName;
 
     /**
-     * method course
+     * course object
+     * @param courseName the name of the course
+     * @param credits the amount of credits the course gives
+     * @param department the department that the course is in
      */
     public Course(String courseName, double credits, Department department) {
         this.courseName = courseName;

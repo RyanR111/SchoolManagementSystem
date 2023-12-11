@@ -21,7 +21,10 @@ public class Student {
     private Department department;
 
     /**
-     * method Student
+     * student object
+     * @param fname student's first name
+     * @param lname student's last name
+     * @param department student's department
      */
     public Student(String fname, String lname, Department department) {
         this.fname = fname;

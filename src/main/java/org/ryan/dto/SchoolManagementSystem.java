@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
- * methods that manage the entire school system
+ * methods and fields that manage the entire school system
  * @author Ryan Roberge
  */
 @Getter
@@ -36,7 +36,8 @@ public class SchoolManagementSystem {
 
     /**
      * method to find the department
-     * @return returns department
+     * @param deptId the id of the department that is being looked for
+     * @return returns the department
      */
     public Department findDepartment(String deptId) {
         int deptCounter = numOfDepts - 1;
@@ -53,6 +54,8 @@ public class SchoolManagementSystem {
 
     /**
      * method that modifies the course assigned to a teacher
+     * @param courseId the id of the course where the teacher will be added to
+     * @param teacherId the id of the teacher that is being added to the course
      */
     public void modifyCourseTeacher(String courseId, String teacherId) {
         int teacherCounter = numOfTeachers - 1;
@@ -77,7 +80,8 @@ public class SchoolManagementSystem {
         }
 
     /**
-     * method that adds a department
+     * method that adds a department to the school system
+     * @param department the department object being added to the school system
      */
     public void addDepartment(Department department) {
         if (numOfDepts < MAX_DEPARTMENT_NUM) {
@@ -88,7 +92,7 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to display the departments
+     * method to display all the departments
      */
     public void displayDepartments() {
         int d = numOfDepts - 1;
@@ -100,7 +104,8 @@ public class SchoolManagementSystem {
 
     /**
      * method that finds a student
-     * @return returns student
+     * @param studentId the id of the student being looked for
+     * @return returns the student if found
      */
     public Student findStudent(String studentId) {
         int studentCounter = numOfStudents - 1;
@@ -117,6 +122,7 @@ public class SchoolManagementSystem {
 
     /**
      * method to add a course
+     * @param course the course object being added to the school system
      */
     public void addCourse(Course course) {
         if (numOfCourses < MAX_COURSE_NUM) {
@@ -127,7 +133,7 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to display the courses
+     * method to display all the courses
      */
     public void displayCourses() {
         int c = numOfCourses - 1;
@@ -138,7 +144,9 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to register the course
+     * method to register a student to course
+     * @param courseId the id of course that the student is registering to
+     * @param studentId the id of the student that is registering to the course
      */
     public void registerCourse(String courseId, String studentId) {
         int studentCounter = numOfStudents - 1;
@@ -165,7 +173,8 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to add a teacher
+     * method that adds a teacher to the school system
+     * @param teacher the teacher object being added to the school system
      */
     public void addTeacher(Teacher teacher) {
         if (numOfTeachers < MAX_TEACHER_NUM) {
@@ -176,7 +185,7 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to display the teacher
+     * method to display all the teachers
      */
     public void displayTeachers() {
         int t = numOfTeachers - 1;
@@ -188,7 +197,8 @@ public class SchoolManagementSystem {
 
     /**
      * method to find a course
-     * @return returns the course
+     * @param courseId the id of the course being searched
+     * @return returns the course information if found
      */
     public Course findCourse(String courseId) {
         int courseCounter = numOfCourses - 1;
@@ -204,7 +214,8 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to add a student to the school system
+     * method that adds a student to the school system
+     * @param student the student object being added to the school system
      */
     public void addStudent(Student student) {
         if (numOfStudents < MAX_STUDENT_NUM) {
@@ -215,7 +226,7 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to display the students
+     * method to display all the students
      */
     public void displayStudent() {
         int s = numOfStudents - 1;
@@ -226,8 +237,9 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to find a teacher
-     * @return returns the found teacher
+     * method to find the teacher
+     * @param teacherId the id of the teacher being searched
+     * @return returns the information of the teacher if found
      */
     public Teacher findTeacher(String teacherId) {
         int teacherCounter = numOfTeachers - 1;
