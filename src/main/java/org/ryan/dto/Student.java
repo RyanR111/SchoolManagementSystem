@@ -40,6 +40,5 @@ public class Student {
     public String toString() {
         return String.format("{Student{id=%s,fname='%s',lname='%s',dept=%s, courseNum=%d,courses=%s}\n", id, fname,
                 lname, department, courseNum, Arrays.toString(courses));
-
     }
 }

@@ -48,8 +48,7 @@ public class SchoolManagementSystem {
                 return null;
             }
             deptCounter--;
-        }
-        return null;
+        } return null;
     }
 
     /**
@@ -116,8 +115,7 @@ public class SchoolManagementSystem {
                 return null;
             }
             studentCounter--;
-        }
-        return null;
+        } return null;
     }
 
     /**
@@ -255,7 +253,6 @@ public class SchoolManagementSystem {
                 return null;
             }
             teacherCounter--;
-        }
-        return null;
+        } return null;
     }
 }
