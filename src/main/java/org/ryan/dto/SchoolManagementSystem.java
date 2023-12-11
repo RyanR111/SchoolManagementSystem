@@ -149,6 +149,8 @@ public class SchoolManagementSystem {
                 System.out.println("Student not found!");
             } studentCounter--;
         }
+        int courseAmount = students[studentCounter].getCourseNum() + 1;
+        students[studentCounter].setCourseNum(courseAmount);
 
         int courseCounter = numOfCourses - 1;
         while (courseCounter >= 0) {
@@ -158,7 +160,8 @@ public class SchoolManagementSystem {
                 System.out.println("Course not found!");
             } courseCounter--;
         }
-            courses[courseCounter].setStudents(students);
+        courses[courseCounter].setStudents(students);
+        students[studentCounter].setCourses(courses);
     }
 
     /**
@@ -201,7 +204,7 @@ public class SchoolManagementSystem {
     }
 
     /**
-     * method to add a student
+     * method to add a student to the school system
      */
     public void addStudent(Student student) {
         if (numOfStudents < MAX_STUDENT_NUM) {
