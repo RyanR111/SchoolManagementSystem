@@ -21,6 +21,5 @@ public class Main {
         vanier.modifyCourseTeacher("C001", "T001");
         vanier.registerCourse("C001", "S001");
         vanier.displayCourses();
-
     }
 }

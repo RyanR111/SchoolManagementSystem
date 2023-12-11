@@ -152,24 +152,29 @@ public class SchoolManagementSystem {
         int studentCounter = numOfStudents - 1;
         while (studentCounter >= 0) {
             if (students[studentCounter].getId().equals(studentId)) {
+                students[studentCounter].setCourses(courses);
                 break;
             } else if (studentCounter == 0) {
                 System.out.println("Student not found!");
             } studentCounter--;
         }
-        int courseAmount = students[studentCounter].getCourseNum() + 1;
-        students[studentCounter].setCourseNum(courseAmount);
+
+        if (studentCounter > 5) {
+            System.out.println("Max courses reached for this student.");
+        } else if (studentCounter <= 5 && studentCounter > 0) {
+            int courseAmount = students[studentCounter].getCourseNum() + 1;
+            students[studentCounter].setCourseNum(courseAmount);
+        }
 
         int courseCounter = numOfCourses - 1;
         while (courseCounter >= 0) {
             if (courses[courseCounter].getId().equals(courseId)) {
+                courses[courseCounter].setStudents(students);
                 break;
             } else if (courseCounter == 0) {
                 System.out.println("Course not found!");
             } courseCounter--;
         }
-        courses[courseCounter].setStudents(students);
-        students[studentCounter].setCourses(courses);
     }
 
     /**
