@@ -61,9 +61,20 @@ public class SchoolManagementSystem {
                 break;
             } else if (teacherCounter == 0) {
                 System.out.println("Teacher not found!");
-            } teacherCounter--;
-        } findCourse(courseId).setTeacher(teachers[teacherCounter]);
-    }
+            }
+            teacherCounter--;
+        }
+            int courseCounter = numOfCourses - 1;
+            while (courseCounter >= 0) {
+                if (courses[courseCounter].getId().equals(courseId)) {
+                    break;
+                } else if (teacherCounter == 0) {
+                    System.out.println("Course not found!");
+                }
+                courseCounter--;
+            }
+            courses[courseCounter].setTeacher(teachers[teacherCounter]);
+        }
 
     /**
      * method that adds a department
@@ -71,6 +82,7 @@ public class SchoolManagementSystem {
     public void addDepartment(Department department) {
         if (numOfDepts < MAX_DEPARTMENT_NUM) {
             departments[numOfDepts] = department;
+            System.out.printf("Department %s added successfully.\n", department);
             numOfDepts++;
         } else System.out.println("Cannot add new department, max departments reached.");
     }
@@ -109,6 +121,7 @@ public class SchoolManagementSystem {
     public void addCourse(Course course) {
         if (numOfCourses < MAX_COURSE_NUM) {
             courses[numOfCourses] = course;
+            System.out.printf("Course %s added successfully.\n", course);
             numOfCourses++;
         } else System.out.println("Cannot add new course, max courses reached.");
     }
@@ -127,8 +140,25 @@ public class SchoolManagementSystem {
     /**
      * method to register the course
      */
-    public void registerCourse(Course course, Student student) {
+    public void registerCourse(String courseId, String studentId) {
+        int studentCounter = numOfStudents - 1;
+        while (studentCounter >= 0) {
+            if (students[studentCounter].getId().equals(studentId)) {
+                break;
+            } else if (studentCounter == 0) {
+                System.out.println("Student not found!");
+            } studentCounter--;
+        }
 
+        int courseCounter = numOfCourses - 1;
+        while (courseCounter >= 0) {
+            if (courses[courseCounter].getId().equals(courseId)) {
+                break;
+            } else if (courseCounter == 0) {
+                System.out.println("Course not found!");
+            } courseCounter--;
+        }
+            courses[courseCounter].setStudents(students);
     }
 
     /**
@@ -137,6 +167,7 @@ public class SchoolManagementSystem {
     public void addTeacher(Teacher teacher) {
         if (numOfTeachers < MAX_TEACHER_NUM) {
             teachers[numOfTeachers] = teacher;
+            System.out.printf("Teacher %s added successfully.\n", teacher);
             numOfTeachers++;
         } else System.out.println("Cannot add new teacher, max teachers reached.");
     }
@@ -175,6 +206,7 @@ public class SchoolManagementSystem {
     public void addStudent(Student student) {
         if (numOfStudents < MAX_STUDENT_NUM) {
             students[numOfStudents] = student;
+            System.out.printf("Student %s added successfully.\n", student);
             numOfStudents++;
         } else System.out.println("Cannot add new student, max students reached.");
     }

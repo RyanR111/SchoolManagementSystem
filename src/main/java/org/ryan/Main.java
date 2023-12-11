@@ -19,9 +19,8 @@ public class Main {
         Course course1 = new Course("Biology", 2, science);
         vanier.addCourse(course1);
         vanier.modifyCourseTeacher("C001", "T001");
+        vanier.registerCourse("C001", "S001");
         vanier.displayCourses();
-        System.out.println(vanier.findCourse("C002"));
-        System.out.println(vanier.findStudent("S001"));
-        System.out.println(vanier.findTeacher("T001"));
+
     }
 }
